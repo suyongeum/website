@@ -38,6 +38,7 @@ body {
     Line-height: 20px;
     color: #8e8b8b;
     position: relative;
+    width: 500px;
 }
 
 .words .each_word h3 {
@@ -88,9 +89,9 @@ span.box {
 
 .meaning .left {    
     text-align:left;    
-    flex: 0 0 60px; /* do not grow, do not shrink, start at 250px */
+    flex: 0 0 65px; /* do not grow, do not shrink, start at 250px */
     /* border: 1px dashed #00f; */
-    margin: 0 0 0 0;    
+    margin: 0 5px 0 0;    
 }
 
 .meaning .right {
@@ -100,6 +101,8 @@ span.box {
     /* border: 1px dashed #f0f; */
     position:relative;
     top:-2px;    
+    margin: 1px 10px 10px 0;
+    line-height: 150%;
 }
 
 .pron_en .audioicon {
@@ -112,10 +115,9 @@ span.box {
     font-size: 20px;
 }
 .pron_jp {
-    margin: 5px 0 30px 0;
+    margin: 5px 0 20px 0;
     text-align: center;
 }
-
 
 .sentence {
     display: flex;
@@ -124,9 +126,9 @@ span.box {
 
 .sentence .left {
     text-align: left;
-    flex: 0 0 60px; /* do not grow, do not shrink, start at 250px */
+    flex: 0 0 65px; /* do not grow, do not shrink, start at 250px */
     /* border: 1px dashed #00f; */   
-    margin: 0 0 0 0;     
+    margin: 0 5px 0 0;     
 }
 
 .sentence .right {
@@ -138,11 +140,12 @@ span.box {
 .sentence .right .en {
     margin-bottom: 2px;
     font-size: 18px;
+    color:rgb(9, 10, 51);
 }
 
 .sentence .right .jp {
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 button {
@@ -152,4 +155,27 @@ button {
   
 button:focus {
     outline: none;
+}
+
+.graph {
+    width: 160px;
+    height: 130px;
+}
+
+.middle_box {
+    display: flex;
+    margin: 2px 0 10px 0;
+}
+
+.middle_box .pronunciation {
+    text-align: center;
+    flex: 0 0 290px; /* do not grow, do not shrink, start at 250px */
+    /* border: 1px dashed #00f; */   
+    margin: 0 5px 0 0;     
+}
+
+.middle_box .graph {
+    text-align: left;
+    flex: 0 0 160px; /* do not grow, do not shrink, start at 250px */
+    /* border: 1px dashed #00f; */ 
 }
