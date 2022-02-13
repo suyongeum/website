@@ -68,12 +68,12 @@ document.addEventListener('DOMContentLoaded', function(){
     // console.log(arr.max(freq_list));
     // console.log(arr.min(freq_list));
 
-    document.querySelector(".each_word h3").textContent = wordObj['word'];
+    document.querySelector(".each_word h3").textContent = 'characteristic';//wordObj['word'];
     let eng_pro = wordObj['pronun_en'].split(',');
     document.querySelector(".pron_en").textContent = "[ "+eng_pro[0].trim()+" ]";
     let jp_pro = wordObj['pronun_jp'].split(',');
     document.querySelector(".pron_jp").textContent = "[ "+jp_pro[0].trim()+" ]";
-    document.querySelector(".right").textContent = wordObj['meaning'];
+    document.querySelector(".meaning").textContent = wordObj['meaning'];
 
     src_url =`https://github.com/suyongeum/website/blob/master/audios/${wordObj['word'].charAt(0)}/${wordObj['word']}.mp3?raw=true`;
     document.querySelector("audio").setAttribute('src', src_url); //  .textContent = src_url;
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let length = wordObj['sentence_en'].length;
     let sentence_en = '';
     let sentence_jp = '';
-    let div_sentence = document.querySelector(".sentence .right");
+    let div_sentence = document.querySelector(".sentence");
 
     for(let i=0; i<length; i++) {
         sentence_en = (wordObj['sentence_en'])[i];
@@ -118,7 +118,7 @@ document.addEventListener('dblclick', function(){
     document.querySelector(".pron_en").textContent = "[ "+eng_pro[0].trim()+" ]";
     let jp_pro = wordObj['pronun_jp'].split(',');
     document.querySelector(".pron_jp").textContent = "[ "+jp_pro[0].trim()+" ]";
-    document.querySelector(".right").textContent = wordObj['meaning'];
+    document.querySelector(".meaning").textContent = wordObj['meaning'];
 
     src_url =`https://github.com/suyongeum/website/blob/master/audios/${wordObj['word'].charAt(0)}/${wordObj['word']}.mp3?raw=true`;
     document.querySelector("audio").setAttribute('src', src_url); //  .textContent = src_url;
@@ -126,7 +126,7 @@ document.addEventListener('dblclick', function(){
     let length = wordObj['sentence_en'].length;
     let sentence_en = '';
     let sentence_jp = '';
-    let div_sentence = document.querySelector(".sentence .right");
+    let div_sentence = document.querySelector(".sentence");
     div_sentence.innerHTML = '';
     
     for(let i=0; i<length; i++) {
