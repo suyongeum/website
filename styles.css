@@ -9,13 +9,13 @@ body {
 
 .title {
     text-align: center; 
+    margin-bottom: 70px;
+    margin-top: 20px;   
 }
 
 h1 {
     /* font-family: 'Allura', cursive; */
     font-size: 35px;
-    margin-bottom: 70px;
-    margin-top: 20px;   
 }
 
 .words {
@@ -27,11 +27,12 @@ h1 {
     background: #fff;
     padding: 20px;
     width: 480px;
+    margin-top: 50px;
 }
 
 .each_word_img {
     position: absolute;
-    top: 80px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);  
 
@@ -47,7 +48,7 @@ h1 {
     text-align: center;
     /* font-size: 9vw; */
     font-size: 70px;
-    margin: 10px 5px 10px;
+    margin-top: 25px;
 }
 
 span.box {
@@ -86,46 +87,56 @@ span.box {
 }
 
 .middle_box div {
-    border: 1px #ccc solid;    
+    border: 0px #ccc solid;    
 }
 
 .middle_box .pronunciation {
     flex-basis:66%;
     text-align: center;
+    height:110px;
 }
 
 .middle_box .graph {
     width:33%;
+    height:110px;
 }
 
 .pron_en_text {
     margin: 0;
-    padding: 10px;
+    padding: 0px;
 }
 
 button {
     border-radius: 40%;
-    padding: 5px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: transparent;
 }
 
 .pron_en {
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     font-size: 20px;
 }
 
 .pron_jp {
-    margin: 0;
-    padding: 10px;
+    margin-top: 5px;
     font-size: 17px;
 }
 
 .graph {
-    padding: 5px;
+    padding: 0px;
 }
+
+hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+  } 
 
 @media only screen and (max-width: 480px) {
     .each_word h3 {
